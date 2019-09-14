@@ -1,6 +1,6 @@
 /*!
  * vue-nav-tabs v0.5.7
- * (c) 2018-present cristij <joracristi@gmail.com>
+ * (c) 2019-present cristij <joracristi@gmail.com>
  * Released under the MIT License.
  */
 (function (global, factory) {
@@ -55,8 +55,8 @@ var babelHelperVueJsxMergeProps = function mergeJSXProps(objs) {
 
 function mergeFn(a, b) {
   return function () {
-    a.apply(this, arguments);
-    b.apply(this, arguments);
+    a && a.apply(this, arguments);
+    b && b.apply(this, arguments);
   };
 }
 
@@ -170,7 +170,10 @@ var VueTabs = {
             var indexToActivate = this.tabs.findIndex(function (tab, index) {
                 return tab.title === tabNameOrIndex || index === tabNameOrIndex;
             });
-            if (indexToActivate === this.activeTabIndex) return;
+            // if somehow activeTabIndex is not reflected in the actual vue-tab instance, set it.
+            if (indexToActivate === this.activeTabIndex && !this.tabs[this.activeTabIndex].active) {
+                this.tabs[this.activeTabIndex].active = true;
+            }
             if (indexToActivate !== -1) {
                 this.changeTab(this.activeTabIndex, indexToActivate);
             } else {
