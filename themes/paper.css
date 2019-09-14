@@ -102,16 +102,20 @@
     margin-right: 0;
     border-radius: 4px; }
   .vue-tabs .nav-tabs-justified > .active > a, .vue-tabs .nav-tabs.nav-justified > .active > a,
-  .vue-tabs .nav-tabs-justified > .active > a:hover, .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
-  .vue-tabs .nav-tabs-justified > .active > a:focus, .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
+  .vue-tabs .nav-tabs-justified > .active > a:hover,
+  .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
+  .vue-tabs .nav-tabs-justified > .active > a:focus,
+  .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
     border: 1px solid #ddd; }
   @media (min-width: 768px) {
     .vue-tabs .nav-tabs-justified > li > a, .vue-tabs .nav-tabs.nav-justified > li > a {
       border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0; }
     .vue-tabs .nav-tabs-justified > .active > a, .vue-tabs .nav-tabs.nav-justified > .active > a,
-    .vue-tabs .nav-tabs-justified > .active > a:hover, .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
-    .vue-tabs .nav-tabs-justified > .active > a:focus, .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
+    .vue-tabs .nav-tabs-justified > .active > a:hover,
+    .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
+    .vue-tabs .nav-tabs-justified > .active > a:focus,
+    .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
       border-bottom-color: #fff; } }
 
 .vue-tabs .tab-content > .tab-pane {
@@ -153,15 +157,13 @@
   .vue-tabs .nav-tabs > li.active {
     color: #66615b;
     position: relative; }
-    .vue-tabs .nav-tabs > li.active > a,
-    .vue-tabs .nav-tabs > li.active > a:hover,
-    .vue-tabs .nav-tabs > li.active > a:focus {
+    .vue-tabs .nav-tabs > li.active > a, .vue-tabs .nav-tabs > li.active > a:hover, .vue-tabs .nav-tabs > li.active > a:focus {
       background-color: transparent;
       border: 0 none; }
     .vue-tabs .nav-tabs > li.active a:after {
       border-bottom: 11px solid #FFFFFF;
-      border-left: 11px solid transparent;
-      border-right: 11px solid transparent;
+      border-left: 11px solid rgba(0, 0, 0, 0);
+      border-right: 11px solid rgba(0, 0, 0, 0);
       content: "";
       display: inline-block;
       position: absolute;
@@ -169,8 +171,8 @@
       bottom: 0; }
     .vue-tabs .nav-tabs > li.active a:before {
       border-bottom: 11px solid #F1EAE0;
-      border-left: 11px solid transparent;
-      border-right: 11px solid transparent;
+      border-left: 11px solid rgba(0, 0, 0, 0);
+      border-right: 11px solid rgba(0, 0, 0, 0);
       content: "";
       display: inline-block;
       position: absolute;
@@ -192,8 +194,8 @@
     color: #66615b; }
   .vue-tabs .nav-stacked > li.active a:after {
     border-right: 11px solid #FFFFFF;
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
+    border-top: 11px solid rgba(0, 0, 0, 0);
+    border-bottom: 11px solid rgba(0, 0, 0, 0);
     content: "";
     display: inline-block;
     position: absolute;
@@ -201,8 +203,8 @@
     bottom: 7px; }
   .vue-tabs .nav-stacked > li.active a:before {
     border-right: 11px solid #F1EAE0;
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
+    border-top: 11px solid rgba(0, 0, 0, 0);
+    border-bottom: 11px solid rgba(0, 0, 0, 0);
     content: "";
     display: inline-block;
     position: absolute;

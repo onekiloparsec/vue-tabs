@@ -102,16 +102,20 @@
     margin-right: 0;
     border-radius: 4px; }
   .vue-tabs .nav-tabs-justified > .active > a, .vue-tabs .nav-tabs.nav-justified > .active > a,
-  .vue-tabs .nav-tabs-justified > .active > a:hover, .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
-  .vue-tabs .nav-tabs-justified > .active > a:focus, .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
+  .vue-tabs .nav-tabs-justified > .active > a:hover,
+  .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
+  .vue-tabs .nav-tabs-justified > .active > a:focus,
+  .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
     border: 1px solid #ddd; }
   @media (min-width: 768px) {
     .vue-tabs .nav-tabs-justified > li > a, .vue-tabs .nav-tabs.nav-justified > li > a {
       border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0; }
     .vue-tabs .nav-tabs-justified > .active > a, .vue-tabs .nav-tabs.nav-justified > .active > a,
-    .vue-tabs .nav-tabs-justified > .active > a:hover, .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
-    .vue-tabs .nav-tabs-justified > .active > a:focus, .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
+    .vue-tabs .nav-tabs-justified > .active > a:hover,
+    .vue-tabs .nav-tabs.nav-justified > .active > a:hover,
+    .vue-tabs .nav-tabs-justified > .active > a:focus,
+    .vue-tabs .nav-tabs.nav-justified > .active > a:focus {
       border-bottom-color: #fff; } }
 
 .vue-tabs .tab-content > .tab-pane {
@@ -153,9 +157,7 @@
     color: rgba(255, 255, 255, 0.5); }
   .vue-tabs .nav-tabs > li .material-icons {
     margin: -1px 5px 0 0; }
-  .vue-tabs .nav-tabs > li.active > a,
-  .vue-tabs .nav-tabs > li.active > a:hover,
-  .vue-tabs .nav-tabs > li.active > a:focus {
+  .vue-tabs .nav-tabs > li.active > a, .vue-tabs .nav-tabs > li.active > a:hover, .vue-tabs .nav-tabs > li.active > a:focus {
     background-color: rgba(255, 255, 255, 0.2);
     transition: background-color .1s .2s; }
 
