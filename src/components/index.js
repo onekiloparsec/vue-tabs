@@ -1,9 +1,10 @@
-import VueTabs from './components/VueTabs.js'
-import VTab from './components/VTab.js'
+import Tabs from './Tabs.vue'
+import Tab from './Tab.vue'
+
 const VueTabsPlugin = {
-  install(Vue) {
-    Vue.component('vue-tabs', VueTabs)
-    Vue.component('v-tab', VTab)
+  install (Vue) {
+    Vue.component('tabs', Tabs)
+    Vue.component('tab', Tab)
   }
 }
 // Automatic installation if Vue has been added to the global scope.
@@ -11,8 +12,10 @@ if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(VueTabsPlugin)
   window.VueTabs = VueTabsPlugin
 }
+
 export default VueTabsPlugin
+
 export {
-    VueTabs,
-    VTab
+  Tabs,
+  Tab
 }

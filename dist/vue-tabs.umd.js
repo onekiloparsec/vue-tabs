@@ -1,5 +1,14 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["vue-tabs"] = factory();
+	else
+		root["vue-tabs"] = factory();
+})((typeof self !== 'undefined' ? self : this), function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -971,4 +980,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-tabs.common.js.map
+});
+//# sourceMappingURL=vue-tabs.umd.js.map
